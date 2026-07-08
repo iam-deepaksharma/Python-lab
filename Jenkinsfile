@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // ✅ Clone source code from GitHub
                 git branch: 'main',
-                    url: 'https://github.com/yourusername/python-lab.git'
+                    url: 'https://github.com/iam-deepaksharma/python-lab.git'
             }
         }
 
