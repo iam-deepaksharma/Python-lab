@@ -5,7 +5,7 @@ pipeline {
         stage('Clone') {
             steps {
                 // ✅ Clone source code from GitHub
-                git branch: 'master',
+                git branch: 'main',
                     url: 'https://github.com/yourusername/python-demo.git'
             }
         }
