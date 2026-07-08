@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // ✅ Clone source code from GitHub
                 git branch: 'main',
-                    url: 'https://github.com/yourusername/python-demo.git'
+                    url: 'https://github.com/yourusername/python-lab.git'
             }
         }
 
@@ -15,7 +15,7 @@ pipeline {
                 script {
                     // ✅ Build Docker image from Dockerfile
                     sh """
-                    docker build -t localhost:5000/python-demo:v1 .
+                    docker build -t localhost:5000/python-lab:v1 .
                     """
                 }
             }
@@ -26,7 +26,7 @@ pipeline {
                 script {
                     // ✅ Push Docker image to local registry
                     sh """
-                    docker push localhost:5000/python-demo:v1
+                    docker push localhost:5000/python-lab:v1
                     """
                 }
             }
